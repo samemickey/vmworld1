@@ -1,0 +1,136 @@
+footer {
+  width: 100%;
+  float: left;
+  background: #848388;
+  -webkit-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.34);
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.34);
+  color: #fff;
+  position: relative;
+}
+footer .container {
+  padding: 0;
+  float: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .container {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+footer .footerMenu {
+  padding: 0px 38px 40px;
+  float: left;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  footer .footerMenu {
+    padding: 0px 0px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  footer .footerMenu {
+    padding: 0px 20px 30px;
+  }
+  footer .footerMenu > div {
+    padding-top: 30px;
+  }
+}
+footer .footerMenu > div {
+  padding-top: 40px;
+  padding-left: 0;
+}
+footer .footerMenu h4 {
+  font-family: 'Proximanova Semibold', Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+footer .footerMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footerMenu ul li a {
+  font-family: 'Proximanova Light', Arial, sans-serif;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+}
+footer .copyrightWrap {
+  background: #757575;
+  width: 100%;
+  float: right;
+  margin: 0 auto;
+}
+footer .copyrightWrap .container {
+  max-width: 1200px;
+  padding: 10px 45px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .copyrightWrap .container {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 767px) {
+  footer .copyrightWrap .container {
+    padding: 20px 15px;
+  }
+}
+footer .copyrightWrap .copyright {
+  font-family: 'Proximanova Light', Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 0;
+  float: left;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  footer .copyrightWrap .copyright {
+    padding: 15px;
+    text-align: left;
+  }
+}
+footer .copyrightWrap .copyrightMenu {
+  float: right;
+}
+footer .copyrightWrap .copyrightMenu ul {
+  list-style: none;
+  float: right;
+}
+@media (max-width: 1024px) {
+  footer .copyrightWrap .copyrightMenu ul {
+    float: left;
+    position: relative;
+    padding: 0;
+  }
+}
+footer .copyrightWrap .copyrightMenu ul li {
+  float: left;
+  border-left: 1px solid #fff;
+}
+footer .copyrightWrap .copyrightMenu ul li:first-child {
+  border: 0;
+}
+footer .copyrightWrap .copyrightMenu ul li a {
+  font-family: 'Proximanova Light', Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+  display: block;
+}
+@media (max-width: 767px) {
+  footer .copyrightWrap .copyrightMenu ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  footer .copyrightWrap .copyrightMenu ul li:first-child a {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  footer .col-xs-12:first-child h4 {
+    margin-top: 0;
+  }
+}

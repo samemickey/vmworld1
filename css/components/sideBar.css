@@ -1,0 +1,115 @@
+.sideBar {
+  width: 170px;
+  padding-left: 10px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  top: 0;
+}
+.sideBar .sidebarContent {
+  width: 160px;
+  float: right;
+  margin-bottom: 20px;
+}
+.sideBar .sidebarContent .sidebarTop {
+  display: block;
+  background: #0195d3 url('../images/icons.png') 50% 100% no-repeat;
+  height: 38px;
+}
+@media (max-width: 1024px) {
+  .sideBar .sidebarContent .sidebarTop {
+    display: none;
+  }
+}
+.sideBar .sidebarShadow {
+  -webkit-box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+}
+.sideBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0px 4px 14px;
+  background: #fff;
+}
+@media (max-width: 1024px) {
+  .sideBar ul {
+    position: relative;
+    right: -220px;
+    box-shadow: none;
+    display: none;
+  }
+}
+.sideBar ul li {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 5px;
+}
+.sideBar ul li:last-child {
+  border: 0;
+}
+.sideBar .sideBarArrow {
+  display: none;
+  float: left;
+}
+@media (max-width: 1024px) {
+  .sideBar .sideBarArrow {
+    display: block;
+    width: 100%;
+  }
+}
+.sideBar .sideBarArrow a {
+  display: block;
+  width: 33px;
+  height: 61px;
+  background: #0195d3;
+  color: #fff;
+  font-size: 50px;
+  padding-left: 8px;
+  line-height: 60px;
+  text-decoration: none;
+}
+.sideBar .sideBarArrow a:hover {
+  text-decoration: none;
+}
+.sideBar .sideBarOtherContent {
+  background: #ccc;
+  position: relative;
+  padding: 10px;
+  float: left;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .sideBar .sideBarOtherContent {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .sideBar.open .sideBarArrow a.mobileView {
+    background-color: #464646;
+  }
+  .sideBar .sideBarArrow a.mobileView {
+    display: block;
+    width: 73px;
+    height: 38px;
+    background: #0195d3 url('../images/icons.png') 50% 100% no-repeat;
+    float: right;
+  }
+  .sideBar .sideBarArrow a.mobileView:before {
+    display: none;
+  }
+  .sideBar .sideBarArrow a.dskView {
+    display: none;
+  }
+  .sideBar .sidebarShadowNA {
+    box-shadow: none;
+  }
+}
+.lt-ie9 .sideBar ul {
+  border-left: 1px solid #aeaeae;
+  border-bottom: 1px solid #aeaeae;
+  padding-bottom: 10px;
+}

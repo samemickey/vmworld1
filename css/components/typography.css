@@ -1,0 +1,152 @@
+/*CUSTOM VARIABLES*/
+.theme-1 {
+  color: #6a6a6a;
+  /*----ADD CLASSES BELOW THIS LINE----*/
+  /*----ADD CLASSES ABOVE THIS LINE----*/
+}
+.theme-1 .navbar {
+  background-color: #0095d3;
+}
+@media (max-width: 1024px) {
+  .theme-1 .navbar {
+    background-color: transparent;
+  }
+}
+.theme-1 .navbar:before {
+  background: url('../images/nav_left_bg.jpg') no-repeat 0 0;
+}
+.theme-1 .sideBar .sidebarContent .sidebarTop,
+.theme-1 .primaryBtn,
+.theme-1 .tabs,
+.theme-1 .navbar .navbar-toggle.collapsed {
+  background-color: #0095d3;
+}
+.theme-1 .heroText,
+.theme-1 h3,
+.theme-1 .h3,
+.theme-1 .topBar ul li a.active {
+  color: #0095d3;
+}
+.theme-1 .sideBar ul li {
+  border-bottom: 1px solid #0095d3;
+}
+@media (max-width: 1024px) {
+  .theme-1 .sideBar .sideBarArrow a.mobileView {
+    background-color: #0095d3;
+  }
+  .theme-1 .navbar #navbar .navbar-nav li a.active,
+  .theme-1 .navbar #navbar .navbar-nav li a:hover {
+    color: #0095d3;
+  }
+}
+.theme-1 .eventText {
+  background: transparent url("../images/heroText_bg_blue.png") no-repeat scroll right top;
+  width: 386px;
+  height: 386px;
+  padding-top: 300px;
+}
+@media (max-width: 767px) {
+  .theme-1 .eventText {
+    height: 320px;
+    width: 100%;
+    padding-top: 215px;
+  }
+}
+.theme-2 {
+  color: #6a6a6a;
+  /*----ADD CLASSES BELOW THIS LINE----*/
+  /*----ADD CLASSES ABOVE THIS LINE----*/
+}
+.theme-2 .navbar {
+  background-color: #6db33f;
+}
+@media (max-width: 1024px) {
+  .theme-2 .navbar {
+    background-color: transparent;
+  }
+}
+.theme-2 .navbar:before {
+  background: url('../images/nav_left_bg_green.jpg') no-repeat 0 0;
+}
+.theme-2 .sideBar .sidebarContent .sidebarTop,
+.theme-2 .primaryBtn,
+.theme-2 .tabs,
+.theme-2 .navbar .navbar-toggle.collapsed {
+  background-color: #6db33f;
+}
+.theme-2 .heroText,
+.theme-2 h3,
+.theme-2 .h3,
+.theme-2 .topBar ul li a.active {
+  color: #6db33f;
+}
+.theme-2 .sideBar ul li {
+  border-bottom: 1px solid #6db33f;
+}
+@media (max-width: 1024px) {
+  .theme-2 .sideBar .sideBarArrow a.mobileView {
+    background-color: #6db33f;
+  }
+  .theme-2 .navbar #navbar .navbar-nav li a.active,
+  .theme-2 .navbar #navbar .navbar-nav li a:hover {
+    color: #6db33f;
+  }
+}
+.theme-2 .eventText {
+  background: transparent url("../images/heroText_bg_green.png") no-repeat scroll 0 top;
+  width: 420px;
+  height: 465px;
+  padding-top: 380px;
+}
+@media (max-width: 767px) {
+  .theme-2 .eventText {
+    height: 465px;
+    width: 350px;
+    padding-top: 360px;
+  }
+}
+/*----*/
+h2,
+.h2 {
+  font-family: 'Proximanova Light', Arial, sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  color: #464646;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  h2,
+  .h2 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+h3,
+.h3 {
+  font-family: 'Proximanova Semibold', Arial, sans-serif;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  h3,
+  .h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.pageHead {
+  font-family: 'Proximanova', Arial, sans-serif;
+  font-size: 35px;
+  color: #494949;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 50px 0;
+}
+@media (max-width: 480px) {
+  .pageHead {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,115 @@
+    /*CUSTOM VARIABLES*/
+    
+    @green: #6db33f;
+    @blue: #0095d3;
+    @grey: #6a6a6a;
+    @white: #ffffff;
+    @font-color: @grey;
+
+//////////////////////////////////////////////////////
+// CONSTANTS
+
+@fontColour: #fff;
+@bgColour: #000;
+@defaultFont: @grey;
+@navleftBg: transparent;
+@eventTextBg: transparent;
+@numberOfThemes: 2; //controls theme loop
+@eventTextWidth: auto;
+@eventTextWidthMob: auto;
+@eventTextHeight: auto;
+@eventTextHeightMob: auto;
+@eventTextTP: auto;
+@eventTextTPMob: auto;
+
+//////////////////////////////////////////////////////
+// MIXINS
+
+//Theme Definitions by parametric mixin numbers (1), (2), etc.
+.themeDefs(1) {
+  @fontColour: @blue;
+  @bgColour: @blue;
+  @navleftBg: url('../images/nav_left_bg.jpg') no-repeat 0 0;
+  @eventTextBg:  transparent url("../images/heroText_bg_blue.png") no-repeat scroll right top;
+    @eventTextWidth: 386px;
+    @eventTextHeight: 386px;
+    @eventTextTP: 300px;
+    
+    @eventTextHeightMob:320px;
+    @eventTextWidthMob: 100%;
+    @eventTextTPMob:215px;
+}
+
+.themeDefs(2) {
+  //inverse of 1
+  @fontColour: @green;
+  @bgColour: @green;
+  @navleftBg: url('../images/nav_left_bg_green.jpg') no-repeat 0 0;
+    @eventTextBg:  transparent url("../images/heroText_bg_green.png") no-repeat scroll 0 top;
+    @eventTextWidth: 420px;
+    @eventTextHeight: 465px;
+    @eventTextTP: 380px;
+
+    @eventTextWidthMob: 350px;
+    @eventTextHeightMob: 465px;
+    @eventTextTPMob:360px;
+}
+
+//////////////////////////////////////////////////////
+// THEME BUILDING
+
+.buildThemes(@index) when (@index < @numberOfThemes + 1) {
+
+  .theme-@{index} {
+    .themeDefs(@index);
+    color: @defaultFont;
+      
+      /*----ADD CLASSES BELOW THIS LINE----*/
+    .navbar{
+      background-color: @bgColour;
+      @media (max-width: 1024px){
+          background-color:transparent;
+      }
+      &:before{
+          background: @navleftBg;
+      }
+    }
+    .sideBar .sidebarContent .sidebarTop, .primaryBtn, .tabs, .navbar .navbar-toggle.collapsed {
+        background-color: @bgColour;
+    }
+    .heroText, h3, .h3, .topBar ul li a.active {
+        color: @fontColour;
+    }
+    .sideBar ul li{
+            border-bottom: 1px solid @bgColour;
+    }
+    @media (max-width: 1024px){
+        .sideBar .sideBarArrow a.mobileView {
+             background-color: @bgColour;
+        }
+        .navbar #navbar .navbar-nav li a.active, .navbar #navbar .navbar-nav li a:hover {
+            color: @fontColour;
+        }
+    }
+    .eventText {    
+        background: @eventTextBg;
+        width: @eventTextWidth;
+        height: @eventTextHeight;
+        padding-top: @eventTextTP;
+        @media (max-width: 767px){
+            height: @eventTextHeightMob;
+            width: @eventTextWidthMob;
+            padding-top: @eventTextTPMob;
+        }
+    }
+      
+      
+    /*----ADD CLASSES ABOVE THIS LINE----*/
+      
+}
+    .buildThemes(@index + 1);
+}
+//stop loop
+.buildThemes(@index) {}
+//start theme building loop
+.buildThemes(1);

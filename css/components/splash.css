@@ -1,0 +1,43 @@
+.splashWrap {
+  width: 100%;
+  height: 100%;
+  background: #000000 url(../images/hero_image_full.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+.splashWrap .logoWrap {
+  margin-left: 50px;
+}
+.splashWrap .splashContainer {
+  height: auto;
+}
+.splashWrap .navbar {
+  position: absolute;
+  bottom: 0;
+  background: #201c1d;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .splashWrap .navbar {
+    bottom: 0;
+    top: auto;
+  }
+}
+.splashWrap .navbar:before {
+  display: none;
+}
+.splashWrap .navbar .container .navbar-brand {
+  display: block;
+  position: absolute;
+  right: 75px;
+  top: 0;
+}
+.splashWrap #navbar {
+  padding: 0 75px;
+}
+@media (max-width: 1024px) {
+  .splashWrap .navbar-inverse .navbar-toggle,
+  .splashWrap .navbar-inverse .navbar-toggle.collapsed {
+    background: transparent;
+    float: left;
+  }
+}

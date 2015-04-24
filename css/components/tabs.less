@@ -1,0 +1,51 @@
+.tabs {
+    color: #fff;
+    -webkit-box-shadow: 0px 7px 8px 0px rgba(170, 170, 170, 0.8);
+    -moz-box-shadow: 0px 7px 8px 0px rgba(170, 170, 170, 0.8);
+    box-shadow: 0px 7px 8px 0px rgba(170, 170, 170, 0.8);
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            font-family: 'Proximanova Bold';
+            float: left;
+            width: 25%;
+            padding: 18px 27px 18px 27px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+            @media (max-width: 991px) and (min-width: 481px) {
+                padding: 18px 20px 18px 20px;
+                font-size: 16px;
+            }
+            @media only screen and (max-width: 480px) {
+                font-size: 13px;
+                width: 50%;
+                padding: 5px 10px 5px 10px;
+                text-align: left;
+            }
+            &:hover {
+                background-color: #595959;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .container {
+            padding: 0;
+        }
+    }
+    .active {
+        background-color: #595959;
+    }
+}
+.tabContent{
+ margin-top: 25px;   
+    h2{
+        text-align: center;   
+    }
+}
+

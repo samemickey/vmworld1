@@ -1,0 +1,219 @@
+.heroImage {
+    width: 100%;
+    height: 469px;
+    background: #000 url(../images/hero_image_full.jpg) no-repeat 50% 10%;
+    position: relative;
+    @media (max-width: 991px) {
+        background: url(../images/hero_image_ipad.jpg) 10% 50% no-repeat;
+    }
+    @media (max-width: 767px) {
+        background: url(../images/hero_image_mobile.jpg) 50% 50% no-repeat;
+    }
+}
+
+.headerWrapper {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1045px;
+    padding: 0 20px;
+    z-index: 0;
+    @media (max-width: 1023px) {
+        padding: 0 30px;
+        width: 100%;
+    }
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
+}
+
+.ie8 .headWrap {
+    width: 100%;
+    float: left;
+}
+/*--LOGO--*/
+
+.logoWrap {
+    float: left;
+    margin-top: 40px;
+    a {
+        display: block;
+        background: url(../images/logo.png) no-repeat 0 0;
+        width: 290px;
+        height: 50px;
+        @media (max-width: 767px) {
+            width: 206px;
+            height: 36px;
+            background: url('../images/logo_mobile.png') 0 0 no-repeat;
+        }
+    }
+}
+
+.mobLogo {
+    display: none;
+    @media (max-width: 1024px) {
+        display: block;
+        width: 122px;
+        padding: 24px 0 0;
+        float: right;
+        img {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 15px;
+    }
+}
+/*--HERO TEXT--*/
+
+.heroText {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    padding: 22px 0;
+    color: #0195d3;
+    font-size: 20px;
+    text-transform: capitalize;
+    z-index: 1;
+    @media (max-width: 1024px) {
+        width: 45%;
+        font-size: 16px;
+        padding: 22px 0;
+        line-height: 18px;
+    }
+    @media (max-width: 767px) {
+        display: none;
+    }
+    h2 {
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}
+
+.heroTextBG {
+    background: rgba(35, 31, 32, 0.8);
+    float: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 95px;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.heroTextWrap {
+    z-index: 1;
+}
+
+.ie8 .heroTextWrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*-- TOP BAR--*/
+
+.topBar {
+    float: right;
+    top: 0;
+    position: absolute;
+    right: 0;
+    height: 45px;
+    background: #3e3e3e;
+    background: rgba(25, 25, 25, 0.7);
+    width: auto;
+    padding: 8px 20px 10px;
+    z-index: 1;
+    ul {
+        float: left;
+        list-style: none;
+        padding: 0;
+        li {
+            float: left;
+            margin-right: 25px;
+            a {
+                color: #fff;
+                font-size: 19px;
+            }
+        }
+    }
+}
+/*TOP MENU SEARCH*/
+
+.menu-search {
+    float: left;
+    .top_input {
+        float: left;
+        border-radius: 5px;
+        padding: 3px 5px;
+        width: 160px;
+        height: 24px;
+        color: #8d8d8d;
+        border: 0;
+        &::-webkit-input-placeholder {
+            color: #8d8d8d;
+        }
+    }
+    .top_submit {
+        color: #fff;
+        width: 21px;
+        height: 21px;
+        border: 0;
+        content: '\f002';
+        float: left;
+        padding: 0;
+        background: none;
+        padding-top: 2px;
+        margin-left: 5px;
+        font-size: 18px;
+    }
+    .top_input {
+        float: left;
+        margin-left: 10px;
+    }
+}
+/*-----eventText-----*/
+
+.eventText {
+    /*background: transparent url("../images/heroText_bg_blue.png") no-repeat scroll right top;*/
+    bottom: 0;
+    color: #fff;
+    float: right;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-transform: uppercase;
+    
+    @media (max-width: 1024px) {
+        padding-top: 256px;
+    }
+    @media (max-width: 767px) {
+        min-width: 320px;
+        background-size: 100%;
+        font-size: 12px;        
+    }
+    h2 {
+        font: normal 28px 'Proximanova Bold', Arial, sans-serif;
+        text-transform: none;
+        margin: 0;
+        color: #fff;
+        @media (max-width: 767px) {
+            font-size: 19px;
+        }
+    }
+    span {
+        display: block;
+    }
+}
